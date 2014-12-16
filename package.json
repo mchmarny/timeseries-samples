@@ -1,5 +1,5 @@
 {
-  "name": "influxdb-samples",
+  "name": "timeseries-samples",
   "version": "0.0.1",
   "description": "A few samples of time-series data management using influxdb",
   "main": "mock.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mchmarny/influxdb-samples.git"
+    "url": "git://github.com/mchmarny/timeseries-samples.git"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -26,8 +26,8 @@
   "author": "mchmarny <mark@chmarny.com> (http://mark.chmarny.com/)",
   "license": "Apache2",
   "bugs": {
-    "url": "https://github.com/mchmarny/influxdb-samples/issues"
+    "url": "https://github.com/mchmarny/timeseries-samples/issues"
   },
-  "homepage": "https://github.com/mchmarny/influxdb-samples",
+  "homepage": "https://github.com/mchmarny/timeseries-samples",
   "readmeFilename": "README.md"
 }

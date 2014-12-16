@@ -1,10 +1,10 @@
-# influxdb-samples
+# timeseries-samples
 
-A few samples of time-series data management using influxdb. The included `mock.js` generates second-resultion percentage data for CPU Utilization and Free Memory.
+A few samples of time-series data management using [influxdb](http://influxdb.com/). The included `mock.js` generates second-resolution percentage data for CPU Utilization and Free Memory.
 
 ![](./screen_shot.png)
 
-## example queries
+## a few example queries
 
 Simple select of all value
 
