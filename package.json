@@ -1,0 +1,33 @@
+{
+  "name": "influxdb-samples",
+  "version": "0.0.1",
+  "description": "A few samples of time-series data management using influxdb",
+  "main": "mock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "influx": "~3.1.x",
+    "node-uuid": "~1.4.x",
+    "stdio": "~0.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mchmarny/influxdb-samples.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "influxdb",
+    "iot",
+    "samples"
+  ],
+  "author": "mchmarny <mark@chmarny.com> (http://mark.chmarny.com/)",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/mchmarny/influxdb-samples/issues"
+  },
+  "homepage": "https://github.com/mchmarny/influxdb-samples",
+  "readmeFilename": "README.md"
+}
