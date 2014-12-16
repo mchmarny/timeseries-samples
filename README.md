@@ -10,7 +10,7 @@ Simple select of all value
 
 Select of values based on time
 
-`select sample_value from cpu_series where time > '2013-08-12 23:32:01.232' and time < '2013-08-13';`
+`select sample_value from cpu_series where time > '2013-08-12 23:32:01.232'`
 
 95th percentile of value in 5 second intervals
 
