@@ -19,7 +19,7 @@ Standard deviation of value in 5 second intervals. Again, all ad-hoc, downsampli
 `select stddev(sample_value) from cpu_series group by time(1m);`
 
 
-## why influxdb
+## Why influxdb
 
 Having done a few time series systems in Cassandra, HBase and yes, even Mongo, I was looking for something that would be already optimized for that specific data type. Furthermore, I wanted clean API as well as support for many of common telemetry aggregate functions:
 
