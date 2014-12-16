@@ -1,24 +1,20 @@
 # timeseries-samples
 
-A few samples of time-series data management using [influxdb](http://influxdb.com/). The included `mock.js` generates second-resolution percentage data for CPU Utilization and Free Memory.
+A few samples of time-series data management. After a pretty positive experience with [influxdb](http://influxdb.com/) I wanted to create a super simple telemetry producer to spotlight a few time series data queries in influxdb. To do this, the included `mock.js` will generate second-resolution metric data for CPU Utilization and Free Memory on your local machine.
 
 ![](./screen_shot.png)
 
-## a few example queries
-
-Simple select of all value
-
-`select * from mem_series;`
+## Sample queries
 
 Select of values based on time
 
 `select sample_value from cpu_series where time > '2013-08-12 23:32:01.232'`
 
-95th percentile of value in 5 second intervals
+On the fly 90th percentile of value in 5 second intervals. No windowing or period tables required. 
 
-`select percentile(sample_value, 95) from mem_series group by time(5s);`
+`select percentile(sample_value, 90) from mem_series group by time(5s);`
 
-Standard deviation of value in 5 second intervals
+Standard deviation of value in 5 second intervals. Again, all ad-hoc, downsampling 
 
 `select stddev(sample_value) from cpu_series group by time(1m);`
 
@@ -31,6 +27,7 @@ Having done a few systems for time series data in Cassandra, HBase and yes, even
 
 Additionally: 
 
+* Open source (MIT), hosted on [GitHub](https://github.com/influxdb/influxdb/)
 * No external dependancies (nope, no zookeeper)
 * SQL-like query and built-in UI
 * On the fly, downsample aggregate (no need to define windows, just record it and query by ad-hoc period: e.g. 1s, 4s, 2m etc.)
