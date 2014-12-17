@@ -4,6 +4,12 @@ After a pretty positive experience with [influxdb](http://influxdb.com/) I wante
 
 ![](./screen_shot.png)
 
+## Setup
+
+First the database, in the `db` directory execute: `./setup.sh` to start the influxdb instance and redirect logging to `stdout`. Once running follow with: `./init.sh` to create the DB (`test`) and DB User (`test/test`). You should be able to access the influxdb UI at [](http://localhost:8083) where you can see the created DB and its user.
+
+At this point you can fire up the mock script in the `node` directory: `node mock` (golang sample coming soon) which will start sending data and output a few sample queries to play with.
+
 ## Sample queries
 
 Select of values based on arbitrary time window.
